@@ -1,4 +1,4 @@
-###              A class for the Social Relations Model 
+###              An nlme class for the Social Relations Model 
 ###
 ### Copyright 2016  Andrew P Knight (knightap@wustl.edu)
 ### http://apknight.org
@@ -26,12 +26,17 @@
 # requires placing constraints on the variance-covariance
 # matrix.  
 
+# Snijders, T. A. B., & Kenny, D. A. 1999. The social relations model for family data: A multilevel approach. Personal Relationships, 6: 471–486.
+
 # This code was created based on the existing methods
 # provided by Pinheiro & Bates in nlme for pdSymm and pdCompSymm
 
-# To run the SRM, you could use the following type of call
+# To run the SRM, you could use the following type of call:
 # o <- lme(dv ~ 1, random = list(group_id = pdBlocked(list(pdIdent(~1), pdSRM(~a1 + a2 + a3  + a4 + p1 + p2 + p3 + p4-1)))),correlation=corCompSymm(form=~1 | group_id/dyad_id), data=d, na.action=na.omit)
 # Where group_id is the grouping identifier; a1-a4 and p1-p4 are the dummies; dyad_id is a dyad marker. Note, following Snijders & Kenny, a1...an and p1...pn, where n = the maximum group size
+
+# Then, you could use the helper function to extract variance parameters and percentages: 
+# var.out <- srm.pct(o)
 ################################################
 require(nlme)
 
@@ -78,7 +83,7 @@ pdConstruct.pdSRM <- function (object, value = numeric(0), form = formula(object
 		ap.cov <- mean(mat.cov[cbind((1:(nc/2)),(nc/2+1):nc)])        
 
 		# Create a new correlation matrix using these parameters
-		new.mat.cor <- diag(8)
+		new.mat.cor <- diag(nc)
 		new.mat.cor[cbind((1:(nc/2)),(nc/2+1):nc)] <- rep(ap.cor,(nc/2))  	    					
 		new.mat.cor[cbind((nc/2+1):nc,(1:(nc/2)))] <- rep(ap.cor,(nc/2))	
 		
