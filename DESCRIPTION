@@ -1,0 +1,11 @@
+Package: mlsrm
+Type: Package
+Title: Multilevel Social Relations Model
+Version: 1.0
+Author: Man-Nok, Wong
+Maintainer: Man-Nok, Wong <mannok@mnwong.com>
+Description: mlsrm enables the estimation of social relations model using a multilevel approach described by Snijders & Kenny (1999).
+    The code was originally developed by Andrew P Knight (knightap@wustl.edu) in 2016, and I modified his code to make the analysis eaiser.
+License: GNU
+Encoding: UTF-8
+LazyData: true

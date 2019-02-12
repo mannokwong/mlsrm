@@ -1,0 +1,1 @@
+export(mcmc.onestage,mcmc.twostage, mcmc.ci, mlsrm, srm.modelcompare, srm.pct, pdSRM, pdConstruct.pdSRM, pdMatrix.pdSRM, coef.pdSRM, corMatrix.pdSRM, summary.pdSRM)
