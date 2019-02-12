@@ -16,17 +16,9 @@ require(mlsrm)
 ...
 
 # Testing indirect effect
-m1 <- mlsrm(M~IV, "GID", "AID", "PID", data)
-m2 <- mlsrm(DV~IV+M, "GID", "AID", "PID", data)
+m1 <- mlsrm(m~iv, "gid", "aid", "pid", srm_data)
+m2 <- mlsrm(dv~iv+m, "gid", "aid", "pid", srm_data)
 mcmc.1 <- mcmc.twostage(m1, m2)
 mcmc.ci(mcmc.1[,2]*mcmc.1[,5])
-
-# Testing conditional indirect effect
-m1 <- mlsrm(M~IV+W+IVW, "GID", "AID", "PID", data)
-m2 <- mlsrm(DV~IV+W+IVW+M, "GID", "AID", "PID", data)
-mcmc.2 <- mcmc.twostage(m1, m2)
-mcmc.ci((mcmc.2[,2]+mcmc.2[,4])*mcmc.2[,9]) # When W is high
-mcmc.ci((mcmc.2[,2]-mcmc.2[,4])*mcmc.2[,9]) # When W is low
-
 
 }

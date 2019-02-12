@@ -12,10 +12,9 @@ This package is useful for testing
 }
 \examples{
 require(mlsrm)
-...
 
 # Simple slope tests
-m1 <- mlsrm(M~IV+W+IVW, "GID", "AID", "PID", data)
+m1 <- mlsrm(M~IV+W+IVW, "gid", "aid", "pid", data)
 mcmc.1 <- mcmc.onestage(m1)
 mcmc.ci((mcmc.1[,2]+mcmc.1[,4])) # When W is high
 mcmc.ci((mcmc.1[,2]-mcmc.1[,4])) # When W is low
