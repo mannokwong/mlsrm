@@ -4,7 +4,9 @@ mlsrm enables the estimation of Social Relations Model using a multilevel approa
 ## Instructions
 Install and Load Package
 Open an R console or RStudio window. (R can be downloaded for free from https://cran.r-project.org; 
+
 RStudio can be downloaded for free from https://www.rstudio.com/)
+
 Install R package "mlsrm" through Github by pasting and running the following commands in R console or RStudio:
 ```R
 install.packages("devtools") 
@@ -14,6 +16,7 @@ library("mlsrm")
 ```
 ## Example Implementation
 Prepare the dataset in long format (example is given below): 
+
 ID|gid|aid|pid|iv|m|dv
 -|-|-|-|-|-|-
 1|10|11|12|1|5|5
