@@ -3,7 +3,7 @@ mlsrm enables the estimation of Social Relations Model using a multilevel approa
 
 If you wish to cite this package please use: 
 
-Wong, M.-N. (2019). mlsrm: an R package for multilevel social relations model [Computer software]. Available from https://github.com/mannokwong/mlsrm.
+Wong, M.-N. (2019). mlsrm: an R package for for estimating the Social Relations Model from directed dyadic data with round-robin-like designs [Computer software]. Available from https://github.com/mannokwong/mlsrm.
 
 ## Instructions
 Install and Load Package
