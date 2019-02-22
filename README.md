@@ -9,9 +9,14 @@ Install R package "mlsrm" through Github by pasting and running the following co
 ```R
 install.packages("devtools") 
 library("devtools") 
-install_github("mannokwong/mlsrm") 
+install_github("mannokwong/mlsrm")  
+```
+
+To use mlsrm, you need to call the package first:
+```R
 library("mlsrm") 
 ```
+
 ## Example Implementation
 Prepare the dataset in long format (example is given below): 
 
@@ -22,6 +27,12 @@ ID|gid|aid|pid|iv|m|dv
 3|10|11|14|1|5|5
 4|10|11|15|1|5|5
 5|10|12|11|2|4|3
+...|...|...|...|...|...|...
+492|200|204|205|2|2|3
+493|200|205|201|2|2|2
+494|200|205|202|2|3|2
+495|200|205|203|1|1|1
+496|200|205|204|2|1|2
 
 Where 'gid' is group ID, 'aid' is actor ID, 'pid' is partner ID and 'iv', 'm', 'dv' are the variables of interest. 
 
