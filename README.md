@@ -34,7 +34,7 @@ ID|gid|aid|pid|iv|m|dv
 495|200|205|203|1|1|1
 496|200|205|204|2|1|2
 
-Where 'gid' is group ID, 'aid' is actor ID, 'pid' is partner ID and 'iv', 'm', 'dv' are the variables of interest. 
+Where 'gid' is group ID, 'aid' is actor ID, 'pid' is partner ID and 'iv', 'm', 'dv' are variables of interest. 
 
 To call the example dataset from mlsrm library, you may use the following code:
 ```R
