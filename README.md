@@ -3,8 +3,10 @@
 
 ## Version History
 + **1.0** (7/3/2019)  
-I have created an all-in-one function to make the social relations analysis more easier.  
-Other features include: Monte-Carlo method (It is useful for assessing mediation and response surface analysis in multilevel modeling. Not documented yet.)
+I have created an all-in-one function **mlsrm()** to make the social relations analysis easier.  
+Other important features include:  
+**mcmc.onestage()**, **mcmc.twostage()** and **mcmc.ci()** - Observed data was used to estimate the model parameters and their asymptotic covariance. These are then drawn to derive the CIs for each parameter of interest using Monte Carlo simulation. These functions are useful for assessing mediation and response surface analysis.  
+**srm.modelcompare()** - Comparing fit between two models.
 
 ## Instructions
 Install and Load Package
