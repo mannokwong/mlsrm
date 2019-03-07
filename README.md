@@ -1,9 +1,10 @@
 # mlsrm
 mlsrm enables the estimation of Social Relations Model using a multilevel approach described by Snijders &amp; Kenny (1999). The code (pdSRM.R) was originally developed by Andrew P Knight (knightap@wustl.edu) in 2016, and I modified and extended his code to make the analysis easier.
 
-If you wish to cite this package please use: 
-
-Wong, M.-N. (2019). mlsrm: an R package for estimating the Social Relations Model from directed dyadic data with round-robin-like designs [Computer software]. Available from https://github.com/mannokwong/mlsrm.
+## Version History
++ **1.0** (7/3/2019)  
+I have created an all-in-one function to make the social relations analysis more easier.  
+Other features include: Monte-Carlo method (It is useful for assessing mediation and response surface analysis in multilevel modeling. Not documented yet.)
 
 ## Instructions
 Install and Load Package
