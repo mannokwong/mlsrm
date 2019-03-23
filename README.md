@@ -79,3 +79,10 @@ m1 <- mlsrm(m ~ iv, "gid", "aid", "pid", df)
 dv1 <- mlsrm(dv ~ iv, "gid", "aid", "pid", df)
 dv2 <- mlsrm(dv ~ iv + m, "gid", "aid", "pid", df)
 ```
+
+## On a Side Note
+For non-R users, you may also wish to visit [**SRM_R**](https://davidakenny.shinyapps.io/SRM_R/), a free user-friendly web
+application performing same analysis as in **mlsrm**. SRM_R is freely accessible and requires neither statistical software nor a detailed background knowledge of the statistical techniques to use all of its features. SRM_R was originally written by David A. Kenny and together with me in 2019, it was extensively revised.
+
+Kenny, D. A. & Wong, M.-N. (2016, August). SRM_R: An interactive tool for estimating the Social Relations Model from directed dyadic data with round-robin-like designs [Computer software]. Available from https://davidakenny.shinyapps.io/SRM_R/
+
