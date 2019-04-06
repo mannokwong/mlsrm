@@ -1,6 +1,12 @@
 # mlsrm
 **mlsrm** enables the estimation of Social Relations Model using a multilevel approach described by Snijders &amp; Kenny (1999). The code (pdSRM.R) was originally developed by Andrew P Knight (knightap@wustl.edu) in 2016, and I modified and extended his code to make the analysis easier.
 
+## On a Side Note
+For non-R users, you may also wish to visit [**SRM_R**](https://davidakenny.shinyapps.io/SRM_R/), a free user-friendly web
+application performing same analysis as in **mlsrm**. SRM_R is freely accessible and requires neither statistical software nor a detailed background knowledge of the statistical techniques to use all of its features. SRM_R was originally written by David A. Kenny and together with me in 2019, it was extensively revised.
+
+Kenny, D. A. & Wong, M.-N. (2016, August). SRM_R: An interactive tool for estimating the Social Relations Model from directed dyadic data with round-robin-like designs [Computer software]. Available from https://davidakenny.shinyapps.io/SRM_R/
+
 ## Version History
 + **1.0** (7/3/2019)  
 I have created an all-in-one function **mlsrm()** to make the social relations analysis easier.  
@@ -9,7 +15,7 @@ Other important features include:
 **srm.modelcompare()** - Comparing fit between two models.
 
 ## Instructions
-Install and Load Package
+Install and Load Package   
 Open an R console or RStudio window. (R can be downloaded for free from https://cran.r-project.org; RStudio can be downloaded for free from https://www.rstudio.com/)
 
 Install R package "mlsrm" through Github by pasting and running the following commands in R console or RStudio:
@@ -79,10 +85,3 @@ m1 <- mlsrm(m ~ iv, "gid", "aid", "pid", df)
 dv1 <- mlsrm(dv ~ iv, "gid", "aid", "pid", df)
 dv2 <- mlsrm(dv ~ iv + m, "gid", "aid", "pid", df)
 ```
-
-## On a Side Note
-For non-R users, you may also wish to visit [**SRM_R**](https://davidakenny.shinyapps.io/SRM_R/), a free user-friendly web
-application performing same analysis as in **mlsrm**. SRM_R is freely accessible and requires neither statistical software nor a detailed background knowledge of the statistical techniques to use all of its features. SRM_R was originally written by David A. Kenny and together with me in 2019, it was extensively revised.
-
-Kenny, D. A. & Wong, M.-N. (2016, August). SRM_R: An interactive tool for estimating the Social Relations Model from directed dyadic data with round-robin-like designs [Computer software]. Available from https://davidakenny.shinyapps.io/SRM_R/
-
